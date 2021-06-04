@@ -6,10 +6,16 @@
   border:  1px solid #ddd;
   padding: 5px;
 }
+.boxbox {
+  height: 240px;
+  overflow: hidden;
+}
 .box {
+  position: relative;
   box-sizing: content-box;
   display: flex;
   flex-wrap: wrap;
+  height: 240px;
 }
 .tool {
   width: inherit;
@@ -55,6 +61,9 @@
 .cell:hover{
   background-color: #e8ecfc;
   color: #647aff;
+}
+.cell-light {
+  color: #ddd;
 }
 .select {
   background-color: #647aff;
