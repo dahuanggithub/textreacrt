@@ -1,0 +1,66 @@
+* {
+  user-select: none;
+}
+.d-p {
+  width: 280px;
+  border:  1px solid #ddd;
+  padding: 5px;
+}
+.box {
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tool {
+  width: inherit;
+  height: 38px;
+  line-height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+.tool-left {
+  width: 100px;
+  margin: 1px;
+  text-align: center;
+}
+.tool-right{
+  display: flex;
+}
+.tool-right > div {
+  width: 38px;
+  margin: 1px;
+  text-align: center;
+}
+.week-line {
+  display: flex;
+}
+.week-cell {
+  margin: 1px;
+  box-sizing: border-box;
+  height: 38px;
+  line-height: 38px;
+  width: 38px;
+  text-align: center;
+}
+.cell {
+  margin: 1px;
+  box-sizing: border-box;
+  height: 38px;
+  line-height: 38px;
+  width: 38px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3;
+}
+.cell:hover{
+  background-color: #e8ecfc;
+  color: #647aff;
+}
+.select {
+  background-color: #647aff;
+  color: #fff;
+}
+.select:hover {
+  background-color: #647aff;
+  color: #fff;
+}
