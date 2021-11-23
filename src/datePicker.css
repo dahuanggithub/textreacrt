@@ -3,19 +3,29 @@
 }
 .d-p {
   width: 280px;
-  border:  1px solid #ddd;
+  border: 1px solid #f5f5f5;
   padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 6px 10px -8px rgba(46, 55, 107, 0.2);
 }
 .boxbox {
   height: 240px;
   overflow: hidden;
+  position: relative;
 }
 .box {
-  position: relative;
+  position: absolute;
   box-sizing: content-box;
   display: flex;
   flex-wrap: wrap;
   height: 240px;
+  background-color: #fff;
+}
+.show-box {
+  z-index: 3;
+}
+.box {
+  transition: top 0.3s;
 }
 .tool {
   width: inherit;
@@ -29,13 +39,26 @@
   margin: 1px;
   text-align: center;
 }
-.tool-right{
+.tool-right {
   display: flex;
 }
 .tool-right > div {
   width: 38px;
   margin: 1px;
   text-align: center;
+}
+.tool-btn {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  transition: all 0.3;
+}
+.tool-btn:hover {
+  background-color: #e8ecfc;
+  color: #647aff;
+  border-radius: 4px;
 }
 .week-line {
   display: flex;
@@ -56,9 +79,10 @@
   width: 38px;
   text-align: center;
   cursor: pointer;
-  transition: all .3;
+  transition: all 0.3;
+  border-radius: 4px;
 }
-.cell:hover{
+.cell:hover {
   background-color: #e8ecfc;
   color: #647aff;
 }
