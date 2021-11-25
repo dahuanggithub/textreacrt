@@ -1,13 +1,11 @@
-
-import {Motion,TransitionMotion, spring} from 'react-motion';
 import ReactDOM from 'react-dom';
-import DatePicker from './dataPicker'
+import Calendar from './Calendar/Calendar'
 
 
 
 
 ReactDOM.render(
-  <DatePicker />,
+  <Calendar />,
   document.getElementById('root')
 );
 
