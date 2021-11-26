@@ -1,7 +1,7 @@
 /*
 日历组件
 */
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import './Calendar.css'
 function Calendar () {
   
@@ -85,7 +85,7 @@ function Calendar () {
     _arr.push(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + i)
   }
   
-  
+  console.log(1);
 
   // console.log(_arr)
   // style.top
@@ -148,7 +148,7 @@ function Calendar () {
   
 
   const weeks = ['一','二','三','四','五','六','日'].map( w => <div key={w} className="week-cell">{w}</div>)
-  const dates = _arr.map( d => <div key={d} className="cell">{d.split('-')[2]}</div>)
+  const dates = _arr.map( d => <div key={d} className={['cell',(parseInt(d.split('-')[0])!== y||parseInt(d.split('-')[1])!== m)&&'cell-light'].join(' ')}>{d.split('-')[2]}</div>)
   return(
     <div className="d-p">
       <div className="tool">
